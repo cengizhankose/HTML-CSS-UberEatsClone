@@ -1,1 +1,247 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  font-size: 16px;
+  --font-family: Roboto;
+  --color-green: #06c167;
+  --color-grey: rgb(238, 238, 238);
+  --color-greyDarker: rgb(84, 84, 84);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.smallText {
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+.container {
+  width: calc(100% - 120px);
+  margin: auto;
+}
+
+header .logo h1 {
+  font-weight: 400;
+}
+
+header .logo h1 span {
+  font-weight: 600;
+  color: var(--color-green);
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .searchBar {
+  margin-left: auto;
+}
+
+header .header-option {
+  padding-left: 5rem;
+  letter-spacing: 0.6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-option svg {
+  margin-right: 1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+header .currentDetails,
+header .searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.options {
+  padding: 1.2 rem 0;
+}
+
+.options .options-btn {
+  background: var(--color-grey);
+  padding: 0.8rem 1.2rem;
+  border-radius: 30px;
+  border: 0;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  letter-spacing: 0.6px;
+  margin: 0 7px 0 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.options .options-btn svg {
+  max-width: 20px;
+  margin-right: 0.4rem;
+}
+
+.options .options-btn.selected {
+  background: black;
+  color: white;
+}
+
+.listings {
+  padding: 2rem 0;
+}
+
+.listings .header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.listings .header .header-title h2 {
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.listings .header .header-title span {
+  color: var(--color-greyDarker);
+}
+
+.listings .header .header-viewOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0 auto auto;
+}
+
+.listings .header .header-viewOptions .viewAll {
+  color: var(--color-green);
+  padding-right: 2rem;
+}
+
+.listings .header .header-viewOptions .viewMore .arrow {
+  background: var(--color-grey);
+  opacity: 0.3;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.listings .header .header-viewOptions .viewMore .arrow.darker, .listings .header .header-viewOptions .viewMore .arrow:hover {
+  opacity: 1;
+}
+
+.listings .listings-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.listings .listings-grid .listings-grid-element {
+  width: calc(1 / 3 * 100% - (1 - 1 / 3) * 35px);
+  margin-top: 2rem;
+}
+
+.listings .listings-grid .listings-grid-element .image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.listings .listings-grid .listings-grid-element .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.listings .listings-grid .listings-grid-element .text-lower {
+  padding: 0.6rem 0;
+}
+
+.listings .listings-grid .listings-grid-element .text-lower span {
+  color: var(--color-greyDarker);
+}
+
+.listings .listings-grid .listings-grid-element .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.listings .listings-grid .listings-grid-element .text h3 {
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.listings .listings-grid .listings-grid-element .text span {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--color-greyDarker);
+}
+
+.listings .listings-grid .listings-grid-element .text .rating {
+  margin: auto 0 auto auto;
+  height: 100%;
+}
+
+.listings .listings-grid .listings-grid-element .text .rating span {
+  background: var(--color-grey);
+  font-size: 1rem;
+  color: black;
+}
+
+.circle {
+  height: 40px;
+  width: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+/*# sourceMappingURL=style.css.map */
