@@ -9,5 +9,5 @@ HTML-CSS UberEats Homepage Frontend clone.
 
 ## What the app looks like
 
-![alt text](https://raw.githubusercontent.com/cengizhankose/react-netflix-clone/main/1.png)
-![alt text](https://raw.githubusercontent.com/cengizhankose/react-netflix-clone/main/2.png)
+![alt text](https://raw.githubusercontent.com/cengizhankose/HTML-CSS-UberEatsClone/master/1.png)
+![alt text](https://raw.githubusercontent.com/cengizhankose/HTML-CSS-UberEatsClone/master/2.png)
